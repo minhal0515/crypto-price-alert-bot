@@ -36,7 +36,7 @@ async def main_loop():
     while True:
         met_targets = check_targets()
         if met_targets:
-            message_body = '🎉 Congrats! Price targets met:\n\n'
+            message_body = 'Congrats! Price targets met:\n\n'
             for crypto, price in met_targets.items():
                 message_body += f"{crypto.capitalize()} - ${price:.2f} (Target: ${targets[crypto]})\n"
             await send_telegram_message(message_body)
