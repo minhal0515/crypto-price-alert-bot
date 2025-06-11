@@ -5,7 +5,6 @@ import os
 import asyncio
 import time
 
-# Load .env values
 load_dotenv()
 bot_token = os.getenv("TELEGRAM_TOKEN")
 chat_id = os.getenv("CHAT_ID")
